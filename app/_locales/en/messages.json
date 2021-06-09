@@ -575,6 +575,9 @@
     "message": "View account at $1",
     "description": "$1 replaced by URL for custom block explorer"
   },
+  "blockList": {
+    "message": "Block List"
+  },
   "blockaid": {
     "message": "Blockaid"
   },

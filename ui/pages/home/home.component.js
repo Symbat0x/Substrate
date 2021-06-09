@@ -17,6 +17,7 @@ import RecoveryPhraseReminder from '../../components/app/recovery-phrase-reminde
 import HomeNotification from '../../components/app/home-notification';
 import MultipleNotifications from '../../components/app/multiple-notifications';
 import TransactionList from '../../components/app/transaction-list';
+import BlockList from '../../components/app/block-list';
 import Popover from '../../components/ui/popover';
 import Button from '../../components/ui/button';
 import ConnectedSites from '../connected-sites';
@@ -967,6 +968,14 @@ export default class Home extends PureComponent {
                     </ButtonLink>
                     ///: END:ONLY_INCLUDE_IN
                   }
+                </Tab>
+                <Tab
+                  activeClassName="home__tab--active"
+                  className="home__tab"
+                  data-testid="home__blocklist-tab"
+                  name={t('blockList')}
+                >
+                  <BlockList />
                 </Tab>
               </Tabs>
               {

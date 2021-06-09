@@ -203,6 +203,7 @@ import EnsController from './controllers/ens';
 import PreferencesController from './controllers/preferences';
 import AppStateController from './controllers/app-state';
 import CachedBalancesController from './controllers/cached-balances';
+import BlockController from './controllers/blocks';
 import AlertController from './controllers/alert';
 import OnboardingController from './controllers/onboarding';
 import Backup from './lib/backup';
@@ -768,6 +769,11 @@ export default class MetamaskController extends EventEmitter {
         networkControllerMessenger,
         'NetworkController:networkDidChange',
       ),
+    });
+
+    this.blockController = new BlockController({
+      blockTracker: this.blockTracker,
+      provider: this.provider,
     });
 
     this.onboardingController = new OnboardingController({
@@ -1743,6 +1749,7 @@ export default class MetamaskController extends EventEmitter {
       CurrencyController: this.currencyRateController,
       NetworkController: this.networkController,
       CachedBalancesController: this.cachedBalancesController.store,
+      BlockController: this.blockController.store,
       AlertController: this.alertController.store,
       OnboardingController: this.onboardingController.store,
       PermissionController: this.permissionController,
@@ -1825,6 +1832,7 @@ export default class MetamaskController extends EventEmitter {
         NameController: this.nameController,
         ///: END:ONLY_INCLUDE_IN
         ...resetOnRestartStore,
+        BlockController: this.blockController.store,
       },
       controllerMessenger: this.controllerMessenger,
     });
@@ -2933,6 +2941,10 @@ export default class MetamaskController extends EventEmitter {
       // DetectCollectibleController
       detectNfts: nftDetectionController.detectNfts.bind(
         nftDetectionController,
+      ),
+
+      resetBlockList: this.blockController.resetBlockList.bind(
+        this.blockController,
       ),
 
       /** Token Detection V2 */
