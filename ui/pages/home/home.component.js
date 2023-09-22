@@ -63,9 +63,6 @@ import {
   BUILD_QUOTE_ROUTE,
   VIEW_QUOTE_ROUTE,
   CONFIRMATION_V_NEXT_ROUTE,
-  ///: BEGIN:ONLY_INCLUDE_IN(build-main,build-beta,build-flask)
-  ONBOARDING_SECURE_YOUR_WALLET_ROUTE,
-  ///: END:ONLY_INCLUDE_IN
   ///: BEGIN:ONLY_INCLUDE_IN(build-mmi)
   CONFIRM_ADD_CUSTODIAN_TOKEN,
   INTERACTIVE_REPLACEMENT_TOKEN_PAGE,
@@ -125,7 +122,6 @@ export default class Home extends PureComponent {
     hasWatchTokenPendingApprovals: PropTypes.bool,
     hasWatchNftPendingApprovals: PropTypes.bool,
     ///: BEGIN:ONLY_INCLUDE_IN(build-main,build-beta,build-flask)
-    shouldShowSeedPhraseReminder: PropTypes.bool.isRequired,
     isPopup: PropTypes.bool,
     connectedStatusPopoverHasBeenShown: PropTypes.bool,
     showRecoveryPhraseReminder: PropTypes.bool.isRequired,
@@ -404,11 +400,6 @@ export default class Home extends PureComponent {
     const { t } = this.context;
 
     const {
-      ///: BEGIN:ONLY_INCLUDE_IN(build-main,build-beta,build-flask)
-      history,
-      shouldShowSeedPhraseReminder,
-      isPopup,
-      ///: END:ONLY_INCLUDE_IN
       shouldShowWeb3ShimUsageNotification,
       setWeb3ShimUsageAlertDismissed,
       originOfCurrentTab,
