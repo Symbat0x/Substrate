@@ -603,7 +603,7 @@ export default class Home extends PureComponent {
             key="home-web3ShimUsageNotification"
           />
         ) : null}
-        {
+        {/* {
           ///: BEGIN:ONLY_INCLUDE_IN(build-main,build-beta,build-flask)
           shouldShowSeedPhraseReminder ? (
             <HomeNotification
@@ -622,7 +622,7 @@ export default class Home extends PureComponent {
             />
           ) : null
           ///: END:ONLY_INCLUDE_IN
-        }
+        } */}
         {infuraBlocked && this.state.canShowBlockageNotification ? (
           <HomeNotification
             descriptionText={t('infuraBlockedNotification', [
