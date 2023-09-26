@@ -4192,9 +4192,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/eth-snap-keyring@github:MetaMask/eth-snap-keyring#151bb4128c3395b500926b01d7ae70f02f9ceb09":
-  version: 0.2.2
-  resolution: "@metamask/eth-snap-keyring@https://github.com/MetaMask/eth-snap-keyring.git#commit=151bb4128c3395b500926b01d7ae70f02f9ceb09"
+"@metamask/eth-snap-keyring@npm:^0.2.3":
+  version: 0.2.3
+  resolution: "@metamask/eth-snap-keyring@npm:0.2.3"
   dependencies:
     "@ethereumjs/tx": "npm:^4.2.0"
     "@metamask/eth-sig-util": "npm:^7.0.0"
@@ -4204,7 +4204,7 @@ __metadata:
     "@types/uuid": "npm:^9.0.1"
     superstruct: "npm:^1.0.3"
     uuid: "npm:^9.0.0"
-  checksum: 41a3701241599ad254c851be3c38721cbd13779d038a72dbc234bd0d3754b1e12798a2df014ea5e400a4bbacaaafd6bea2951a6b183265087ac55b1c5ce652e3
+  checksum: 6a6909c34267d78fb3d0b8a4d450667c139862c5e39a982e4cbe613c536d437d701d117f5da4a606209f1acd41d1ca4db9dadcd13df23e82a75fdc1bb9ad74c3
   languageName: node
   linkType: hard
 
@@ -23910,7 +23910,7 @@ __metadata:
     "@metamask/eth-json-rpc-middleware": "npm:^11.0.0"
     "@metamask/eth-keyring-controller": "npm:^10.0.1"
     "@metamask/eth-ledger-bridge-keyring": "npm:^0.15.0"
-    "@metamask/eth-snap-keyring": "github:MetaMask/eth-snap-keyring#151bb4128c3395b500926b01d7ae70f02f9ceb09"
+    "@metamask/eth-snap-keyring": "npm:^0.2.3"
     "@metamask/eth-token-tracker": "npm:^4.0.0"
     "@metamask/eth-trezor-keyring": "npm:^1.1.0"
     "@metamask/etherscan-link": "npm:^2.2.0"

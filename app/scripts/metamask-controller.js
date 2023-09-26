@@ -856,12 +856,23 @@ export default class MetamaskController extends EventEmitter {
     const getKeyringController = () => this.keyringController;
 
     additionalKeyrings.push(
-      snapKeyringBuilder(
-        getSnapController,
-        getApprovalController,
-        getKeyringController,
-        (address) => this.removeAccount(address),
-      ),
+      (() => {
+        const builder = () =>
+          new SnapKeyring(this.snapController, {
+            saveState: async () => {
+              await this.coreKeyringController.persistAllKeyrings();
+            },
+            removeAccount: async (address) => {
+              await this.removeAccount(address);
+            },
+            addressExists: async (address) => {
+              const addresses = await this.coreKeyringController.getAccounts();
+              return addresses.includes(address.toLowerCase());
+            },
+          });
+        builder.type = SnapKeyring.type;
+        return builder;
+      })(),
     );
 
     ///: END:ONLY_INCLUDE_IN
