@@ -2473,6 +2473,9 @@
   "networkNameGoerli": {
     "message": "Goerli"
   },
+  "networkNameLinea": {
+    "message": "Linea"
+  },
   "networkNameOptimism": {
     "message": "Optimism"
   },
