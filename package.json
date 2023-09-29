@@ -208,7 +208,12 @@
     "@metamask/keyring-controller@^8.0.0": "patch:@metamask/keyring-controller@npm%3A8.0.0#~/.yarn/patches/@metamask-keyring-controller-npm-8.0.0-806630ae4e.patch",
     "@metamask/signature-controller@^5.3.0": "patch:@metamask/signature-controller@npm%3A5.3.0#./.yarn/patches/@metamask-signature-controller-npm-5.3.0-225628460b.patch",
     "semver@7.3.7": "^7.5.4",
-    "semver@7.3.8": "^7.5.4"
+    "semver@7.3.8": "^7.5.4",
+    "@metamask/rpc-methods": "github:danroc/snaps#workspace=@metamask/rpc-methods&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37",
+    "@metamask/snaps-controllers": "github:danroc/snaps#workspace=@metamask/snaps-controllers&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37",
+    "@metamask/snaps-utils": "github:danroc/snaps#workspace=@metamask/snaps-utils&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37",
+    "@metamask/snaps-types": "github:danroc/snaps#workspace=@metamask/snaps-types&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37",
+    "@metamask/snaps-execution-environments": "github:danroc/snaps#workspace=@metamask/snaps-execution-environments&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9",
@@ -629,7 +634,10 @@
       "@storybook/addon-knobs>core-js": false,
       "@storybook/manager-webpack5>core-js": false,
       "@storybook/react-webpack5>@storybook/preset-react-webpack>@pmmmwh/react-refresh-webpack-plugin>core-js-pure": false,
-      "ethjs-contract>babel-runtime>core-js": false
+      "ethjs-contract>babel-runtime>core-js": false,
+      "@metamask/snaps-utils": false,
+      "@metamask/rpc-methods": false,
+      "@metamask/snaps-controllers": false
     }
   },
   "packageManager": "yarn@4.0.0-rc.48"
