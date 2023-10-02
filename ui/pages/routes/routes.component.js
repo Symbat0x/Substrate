@@ -35,6 +35,7 @@ import {
   ImportNftsModal,
   ImportTokensModal,
   SelectActionModal,
+  ConnectionsHeader,
 } from '../../components/multichain';
 import UnlockPage from '../unlock-page';
 import Alerts from '../../components/app/alerts';
@@ -482,6 +483,17 @@ export default class Routes extends Component {
     );
   }
 
+  showConnectionHeader() {
+    const { location } = this.props;
+
+    return Boolean(
+      matchPath(location.pathname, {
+        path: CONNECTIONS,
+        exact: true,
+      }),
+    );
+  }
+
   onAppHeaderClick = async () => {
     const { prepareToLeaveSwaps } = this.props;
     if (this.onSwapsPage()) {
@@ -566,6 +578,9 @@ export default class Routes extends Component {
         <Modal />
         <Alert visible={this.props.alertOpen} msg={alertMessage} />
         {!this.hideAppHeader() && <AppHeader location={location} />}
+        {this.showConnectionHeader() && (
+          <ConnectionsHeader location={location} />
+        )}
         {this.showOnboardingHeader() && <OnboardingAppHeader />}
         {
           ///: BEGIN:ONLY_INCLUDE_IN(build-mmi)
