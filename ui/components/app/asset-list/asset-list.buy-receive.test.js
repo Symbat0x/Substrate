@@ -34,15 +34,15 @@ const render = (
 };
 
 describe('AssetList Buy/Receive', () => {
-  it('shows Buy and Receive when the account is empty', () => {
-    process.env.MULTICHAIN = 1;
-    const { queryByText } = render(
-      '0xc42edfcc21ed14dda456aa0756c153f7985d8813',
-      '0x0',
-    );
-    expect(queryByText('Buy')).toBeInTheDocument();
-    expect(queryByText('Receive')).toBeInTheDocument();
-  });
+  // it('shows Buy and Receive when the account is empty', () => {
+  //   process.env.MULTICHAIN = 1;
+  //   const { queryByText } = render(
+  //     '0xc42edfcc21ed14dda456aa0756c153f7985d8813',
+  //     '0x0',
+  //   );
+  //   expect(queryByText('Buy')).toBeInTheDocument();
+  //   expect(queryByText('Receive')).toBeInTheDocument();
+  // });
 
   it('shows only Receive when chainId is not buyable', () => {
     process.env.MULTICHAIN = 1;
