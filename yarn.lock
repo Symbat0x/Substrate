@@ -4320,19 +4320,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/keyring-api@npm:^0.2.3":
-  version: 0.2.4
-  resolution: "@metamask/keyring-api@npm:0.2.4"
+"@metamask/keyring-api@github:MetaMask/keyring-api#95f236493903b3f1122a4bc8471dc8b65e5c9e2e":
+  version: 0.2.7
+  resolution: "@metamask/keyring-api@https://github.com/MetaMask/keyring-api.git#commit=95f236493903b3f1122a4bc8471dc8b65e5c9e2e"
   dependencies:
-    "@metamask/providers": "npm:^12.0.0"
-    "@metamask/rpc-methods": "npm:^0.38.1-flask.1"
-    "@metamask/snaps-controllers": "npm:^0.38.2-flask.1"
-    "@metamask/snaps-utils": "npm:^0.38.2-flask.1"
+    "@metamask/providers": "npm:^13.0.0"
+    "@metamask/rpc-methods": "npm:^2.0.0"
+    "@metamask/snaps-controllers": "npm:^2.0.0"
+    "@metamask/snaps-utils": "npm:^2.0.0"
     "@metamask/utils": "npm:^8.1.0"
     "@types/uuid": "npm:^9.0.1"
     superstruct: "npm:^1.0.3"
     uuid: "npm:^9.0.0"
-  checksum: d61e2bf7252135e5bb099bb10886fcbd4c25392e3bfe9beb267b57f97e653b687e727fd67726492723837b66c40cd226e2539c5a80ebfbe1e56ebf9e93f93728
+  checksum: 144faffcbbcf3df991ae8246ca9a7ba045f8744118de1cfa54f38eb3c83522dc2e8130d112e724b69a3ee1fc01c07a9679e730d5211df5970f5863e33ae4c6d8
   languageName: node
   linkType: hard
 
@@ -4661,9 +4661,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/providers@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@metamask/providers@npm:12.0.0"
+"@metamask/providers@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "@metamask/providers@npm:13.0.0"
   dependencies:
     "@metamask/json-rpc-engine": "npm:^7.1.1"
     "@metamask/object-multiplex": "npm:^1.1.0"
@@ -4675,9 +4675,8 @@ __metadata:
     fast-deep-equal: "npm:^3.1.3"
     is-stream: "npm:^2.0.0"
     json-rpc-middleware-stream: "npm:^4.2.1"
-    pump: "npm:^3.0.0"
     webextension-polyfill: "npm:^0.10.0"
-  checksum: 8c3895593a71de6e165276f00069b57f83b5bb6991b6bb9444ae556d0ceb3252d56b546eb136b19b854b919c4368bf30b37c993da8904ea8ddf200323759e715
+  checksum: c6fe1936741a2b782960f0a12148602754fabe55b75707fd80716d5a42ca4f672d838d1ba36873e96f4afdc5360247e3b737c95b7ca532a74e135218cb65033a
   languageName: node
   linkType: hard
 
@@ -4712,9 +4711,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/rpc-methods@github:danroc/snaps#workspace=@metamask/rpc-methods&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37":
+"@metamask/rpc-methods@github:danroc/snaps#workspace=@metamask/rpc-methods&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81":
   version: 2.0.0
-  resolution: "@metamask/rpc-methods@https://github.com/danroc/snaps.git#workspace=%40metamask%2Frpc-methods&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37"
+  resolution: "@metamask/rpc-methods@https://github.com/danroc/snaps.git#workspace=%40metamask%2Frpc-methods&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81"
   dependencies:
     "@metamask/key-tree": "npm:^9.0.0"
     "@metamask/permission-controller": "npm:^4.1.0"
@@ -4725,7 +4724,7 @@ __metadata:
     "@noble/hashes": "npm:^1.3.1"
     eth-rpc-errors: "npm:^4.0.3"
     superstruct: "npm:^1.0.3"
-  checksum: dfe6eb8976c4636350e28f8076c246edfdda3c004241f0386fd0b83ec1266821707d9ff993a75d785e0bcf6d5af825364bac02aa9e50e16b04a50e2fdbc78d65
+  checksum: 77f3d60694889a5f41c98ce7bd5235a1e9afedc1d3b3a2a8bbf7d3f575b7c3b4f870769225944bb45c4dd805d8ae91c7ec12178d80a275bf4460db53d84577ab
   languageName: node
   linkType: hard
 
@@ -4828,9 +4827,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-controllers@github:danroc/snaps#workspace=@metamask/snaps-controllers&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37":
+"@metamask/snaps-controllers@github:danroc/snaps#workspace=@metamask/snaps-controllers&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81":
   version: 2.0.1
-  resolution: "@metamask/snaps-controllers@https://github.com/danroc/snaps.git#workspace=%40metamask%2Fsnaps-controllers&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37"
+  resolution: "@metamask/snaps-controllers@https://github.com/danroc/snaps.git#workspace=%40metamask%2Fsnaps-controllers&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81"
   dependencies:
     "@metamask/approval-controller": "npm:^3.5.0"
     "@metamask/base-controller": "npm:^3.2.0"
@@ -4856,9 +4855,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-execution-environments@github:danroc/snaps#workspace=@metamask/snaps-execution-environments&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37":
+"@metamask/snaps-execution-environments@github:danroc/snaps#workspace=@metamask/snaps-execution-environments&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81":
   version: 2.0.1
-  resolution: "@metamask/snaps-execution-environments@https://github.com/danroc/snaps.git#workspace=%40metamask%2Fsnaps-execution-environments&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37"
+  resolution: "@metamask/snaps-execution-environments@https://github.com/danroc/snaps.git#workspace=%40metamask%2Fsnaps-execution-environments&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81"
   dependencies:
     "@metamask/object-multiplex": "npm:^1.2.0"
     "@metamask/post-message-stream": "npm:^7.0.0"
@@ -4895,9 +4894,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/snaps-utils@github:danroc/snaps#workspace=@metamask/snaps-utils&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37":
+"@metamask/snaps-utils@github:danroc/snaps#workspace=@metamask/snaps-utils&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81":
   version: 2.0.1
-  resolution: "@metamask/snaps-utils@https://github.com/danroc/snaps.git#workspace=%40metamask%2Fsnaps-utils&commit=df16097c4fa4ff32e8014fd62672c8ddc5970b37"
+  resolution: "@metamask/snaps-utils@https://github.com/danroc/snaps.git#workspace=%40metamask%2Fsnaps-utils&commit=9716f9bf212eede2598863db6aeaa2cf07d4da81"
   dependencies:
     "@babel/core": "npm:^7.20.12"
     "@babel/types": "npm:^7.18.7"
@@ -23920,6 +23919,7 @@ __metadata:
     "@metamask/gas-fee-controller": "npm:^6.0.1"
     "@metamask/jazzicon": "npm:^2.0.0"
     "@metamask/key-tree": "npm:^9.0.0"
+    "@metamask/keyring-api": "npm:^0.2.7"
     "@metamask/keyring-controller": "npm:^8.0.0"
     "@metamask/logging-controller": "npm:^1.0.1"
     "@metamask/logo": "npm:^3.1.1"

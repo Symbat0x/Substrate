@@ -171,6 +171,9 @@ import { getTokenValueParam } from '../../shared/lib/metamask-controller-utils';
 import { isManifestV3 } from '../../shared/modules/mv3.utils';
 import { hexToDecimal } from '../../shared/modules/conversion.utils';
 import { ACTION_QUEUE_METRICS_E2E_TEST } from '../../shared/constants/test-flags';
+///: BEGIN:ONLY_INCLUDE_IN(keyring-snaps)
+import { keyringSnapPermissionsBuilder } from './lib/keyring-snaps-permissions';
+///: END:ONLY_INCLUDE_IN
 
 ///: BEGIN:ONLY_INCLUDE_IN(blockaid)
 import { createPPOMMiddleware } from './lib/ppom/ppom-middleware';
@@ -4379,6 +4382,13 @@ export default class MetamaskController extends EventEmitter {
           'SnapController:install',
           origin,
         ),
+        ///: END:ONLY_INCLUDE_IN
+        ///: BEGIN:ONLY_INCLUDE_IN(keyring-snaps)
+        getAllowedKeyringMethodsForOrigin: keyringSnapPermissionsBuilder(
+          this.subjectMetadataController,
+        ),
+        ///: END:ONLY_INCLUDE_IN
+        ///: BEGIN:ONLY_INCLUDE_IN(snaps)
       }),
     );
     ///: END:ONLY_INCLUDE_IN
